@@ -91,7 +91,7 @@ ALLOWED_HOSTS = []
 
 SYSTEM_SETTINGS_LOCAL_PATH = os.path.join(APP_ROOT, 'system_settings', 'System_Settings.json')
 WSGI_APPLICATION = 'eamena_training_project.wsgi.application'
-STATIC_ROOT = '/var/www/media'
+STATIC_ROOT = '/home/ubuntu/Projects/eamena_training_project/static/'
 
 RESOURCE_IMPORT_LOG = os.path.join(APP_ROOT, 'logs', 'resource_import.log')
 
@@ -130,6 +130,8 @@ MEDIA_ROOT =  os.path.join(APP_ROOT)
 
 # Sets default max upload size to 15MB
 DATA_UPLOAD_MAX_MEMORY_SIZE = 15728640
+
+SEARCH_EXPORT_IMMEDIATE_DOWNLOAD_THRESHOLD = 5000
 
 # Unique session cookie ensures that logins are treated separately for each app
 SESSION_COOKIE_NAME = 'eamena_training_project'
